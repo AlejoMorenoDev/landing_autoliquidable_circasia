@@ -11,14 +11,10 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/estilos.css">
-
-    
-
 </head>
 
 
 <body class="fondo">
-
     <header>
         <section class="container-header">
             <nav class="header-info">
@@ -53,7 +49,6 @@
 
         <section class="box-btn-industria ">
             <div class="btn-industria-pay">
-
                 <button id="btn_mostrar" class="btn-industria">
                     <div>
                         <svg class="ico-industria" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
@@ -95,23 +90,19 @@
                     <div>
                         <p>INDUSTRIA Y <br>COMERCIO</p>
                         <h3>PAGA AQUÍ</h3>
-
                     </div>
                 </button>
             </div>
-
-
         </section>
 
         <section class="box-autoliquidable" style="display: flex; margin: 0 auto; justify-content: center; margin-top: 20px;">
             <div id="img-autoliquidable">
-                <img src="./assets/img/gipao.jpg" alt="autoliquidable">
+                <iframe src="Autoliquidable Circasia/ICA.html" style="border-radius: 1%;" width="1024" height="878" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
-
     </main>
 
-    <footer class="box-Footer">
+    <footer id="Footer1cero1" class="box-Footer">
         <div class="footer">
             <div class="footer-elements"">
                 <p>Asesorado, diseñado y desarrollado por:</p>
@@ -127,28 +118,16 @@
         document.getElementById('btn_mostrar').addEventListener('click', mostrarImagen);
 
         function mostrarImagen() {
-            // Mostrar la imagen
+            // Mostrar la imagen  y bajar el footer
             document.getElementById('img-autoliquidable').style.display = 'flex';
+            const Footer = document.getElementById("Footer1cero1");
+            Footer.classList.remove('box-Footer');
+            Footer.style.marginTop = '1rem';
+            Footer.style.display = 'block';
+            Footer.style.backgroundColor = '#1c1c1da2';
+            Footer.style.width = '100%';
         }
-
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
